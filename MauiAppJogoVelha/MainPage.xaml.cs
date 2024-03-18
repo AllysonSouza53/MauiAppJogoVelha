@@ -2,6 +2,7 @@
 {
     public partial class MainPage : ContentPage
     {
+        private const bool V = true;
         string vez = "O";
 
         public MainPage()
@@ -31,6 +32,7 @@
                 btn12.Text == "X")
             {
                 DisplayAlert("Parabéns!", "O X ganhou!", "Ok");
+                Limpar();
             }
 
             if  (btn10.Text == "O" &&
@@ -38,6 +40,7 @@
                 btn12.Text == "O")
             {
                 DisplayAlert("Parabéns!", "A O ganhou!", "Ok");
+                Limpar();
             }
 
             if  (btn20.Text == "X" &&
@@ -45,6 +48,7 @@
                 btn22.Text == "X")
             {
                 DisplayAlert("Parabéns!", "O X ganhou!", "Ok");
+                Limpar();
             }
 
             if  (btn20.Text == "O" &&
@@ -52,6 +56,7 @@
                 btn22.Text == "O")
             {
                 DisplayAlert("Parabéns!", "A O ganhou!", "Ok");
+                Limpar();
             }
 
             if  (btn30.Text == "X" &&
@@ -59,6 +64,7 @@
                  btn32.Text == "X")
             {
                 DisplayAlert("Parabéns!", "O X ganhou!", "Ok");
+                Limpar();
             }
 
             if (btn30.Text == "O" &&
@@ -66,24 +72,28 @@
                 btn32.Text == "O")
             {
                 DisplayAlert("Parabéns", "A O ganhou!", "Ok");
+                Limpar();
             }
             if (btn12.Text == "X" &&
                 btn21.Text == "X" &&
                 btn30.Text == "X")
             {
                 DisplayAlert("Parabéns", "O X ganhou!", "Ok");
+                Limpar();
             }
             if (btn12.Text == "O" &&
                 btn21.Text == "O" &&
                 btn30.Text == "O")
             {
                 DisplayAlert("Parabéns", "A O ganhou!", "Ok");
+                Limpar();
             }
             if (btn10.Text == "X" &&
                 btn21.Text == "X" &&
                 btn32.Text == "X")
             {
                 DisplayAlert("Parabéns", "O X ganhou!", "Ok");
+                Limpar();
             }
             if (btn10.Text== "O" &&
                 btn21.Text == "O" &&
@@ -158,9 +168,7 @@
             btn31.Text = "";
             btn31.IsEnabled = true;
             btn32.Text = "";
-            btn32.IsEnabled = V;
-
-
+            btn32.IsEnabled = true;
         }
 
     }
